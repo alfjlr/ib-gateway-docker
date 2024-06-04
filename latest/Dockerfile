@@ -29,7 +29,7 @@ RUN curl -sSL https://github.com/UnusualAlpha/ib-gateway-docker/releases/downloa
 RUN curl -sSL https://github.com/UnusualAlpha/ib-gateway-docker/releases/download/ibgateway-latest%4010.22.1m/ibgateway-10.22.1m-standalone-linux-x64.sh.sha256 \
   --output ibgateway-10.22.1m-standalone-linux-x64.sh.sha256
 RUN sha256sum --check ./ibgateway-10.22.1m-standalone-linux-x64.sh.sha256
-RUN chmod a+x ./ibgateway-10.22.1m}-standalone-linux-x64.sh
+RUN chmod a+x ./ibgateway-10.22.1m-standalone-linux-x64.sh
 RUN ./ibgateway-10.22.1m-standalone-linux-x64.sh -q -dir /root/Jts/ibgateway/10.22.1m
 COPY ./config/ibgateway/jts.ini /root/Jts/jts.ini
 

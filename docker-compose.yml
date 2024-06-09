@@ -4,8 +4,7 @@ services:
   ib-gateway:
     container_name: ib-gateway
     restart: always
-    build:
-      context: ./latest
+    image: alfjlr/ib-gateway-10.22.1m:latest
     environment:
       TWS_USERID: ${TWS_USERID}
       TWS_PASSWORD: ${TWS_PASSWORD}

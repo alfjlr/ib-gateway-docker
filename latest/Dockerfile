@@ -42,6 +42,7 @@ RUN chmod -R u+x /root/ibc/scripts/*.sh
 COPY ./config/ibc/config.ini.tmpl /root/ibc/config.ini.tmpl
 
 # Copy scripts
+RUN mkdir /root/scripts
 COPY ./scripts /root/scripts
 
 #
